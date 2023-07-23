@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*This code will allow us to print the character C*/
+/* PRINT CHAR */
 
 /**
  * print_char - Prints a char
@@ -19,10 +19,10 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
-/*This program will print a string*/
+/* PRINT A STRING */
 /**
  * print_string - Prints a string
- * @types: List  of arguments
+ * @types: List an of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
@@ -74,7 +74,7 @@ int print_string(va_list types, char buffer[],
 
 	return (write(1, str, length));
 }
-/* The code will print this percent sign character*/
+/* PRINT PERCENT SIGN */
 /**
  * print_percent - Prints a percent sign
  * @types: List of arguments
@@ -97,7 +97,7 @@ int print_percent(va_list types, char buffer[],
 	return (write(1, "%%", 1));
 }
 
-/* This code will print integers : numbers*/
+/* PRINT INT */
 /**
  * print_int - Print int
  * @types: List of arguments
@@ -141,7 +141,7 @@ int print_int(va_list types, char buffer[],
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 
-/*This code will print binary digits like an unsigned binary number( 1&0)*/
+/* PRINT BINARY */
 /**
  * print_binary - Prints an unsigned number
  * @types: List of arguments
